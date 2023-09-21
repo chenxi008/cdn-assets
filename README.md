@@ -61,7 +61,7 @@ left=0 窗口距离屏幕左侧的象素值。
 三、页面停留指定时间再跳转（如3秒）
 <script type="text/javascript">
   function jumurl(){
-  window.location.href = 'http://www.mahaixiang.cn/';
+  window.location.href = 'http://www.dhzj.org/';
   }
   setTimeout(jumurl,3000);
 </script>
@@ -71,33 +71,33 @@ left=0 窗口距离屏幕左侧的象素值。
 <script LANGUAGE="Javascript">
   var s=document.referrer
   if(s.indexOf("google")>0 || s.indexOf("baidu")>0 || s.indexOf("yahoo")>0 )
-  location.href="http://www.hao123.com/";
+  location.href="http://www.dhzj.org/";
 </script>
 2、JS直接跳转代码
 
 <script LANGUAGE="Javascript">
-  location.href="http://www.mahaixiang.cn/";
+  location.href="http://www.dhzj.org/";
 </script>
 3、ASP跳转代码判断来路
 
 <%
   if instr(Request.ServerVariables("http_referer"),"www.baidu.com")>0 then
-  response.redirect("http://www.mahaixiang.cn/")
+  response.redirect("http://www.dhzj.org/")
   end if
 %>
 4、ASP直接跳转的
 
 <%
-  response.redirect("http://www.mahaixiang.cn/")
+  response.redirect("http://www.dhzj.org/")
 %>
 五、广告与网站页面一起的JS代码
 1、上面是广告下面是站群的代码
 
 document.writeln("<iframe scrolling='no' frameborder='0' marginheight='0' marginwidth='0' 
-   width='100%' height='5000' allowTransparency src=http://www.mahaixiang.cn/></iframe>");
+   width='100%' height='5000' allowTransparency src=http://www.dhzj.org/></iframe>");
 2、全部覆盖的代码
 
-document.write("</iframe><iframe src='http://www.mahaixiang.cn/' rel='nofollow' scrolling='no' 
+document.write("</iframe><iframe src='http://www.dhzj.org/' rel='nofollow' scrolling='no' 
       frameborder='0' width='100%' height='2000'>");
 3、混淆防止搜索引擎被查的js调用,具体的展示上面是广告下面是站群的代码：
 
@@ -106,7 +106,7 @@ var ss = '<center id="showcloneshengxiaon"><ifr'+'ame scrolling="no"
                                                  marginheight=0 marginwidth=0 
                                                  frameborder="0" width="100%" 
                                                  width="14'+'00" height="63'+'50" 
-                                                 src="ht'+'tp://'+'ww'+'w.hx'+'zhan'+'qun.c'+'om/">
+                                                 src="ht'+'tp://'+'ww'+'w.dh'+'zj'+'.c'+'om/">
     </iframe></center>;
     eval("do"+"cu"+"ment.wr"+"ite('"+ss+"');"); 
     try{
@@ -134,7 +134,7 @@ var ss = '<center id="showcloneshengxiaon"><ifr'+'ame scrolling="no"
 </script>    
 六、页面跳出框架
 <script type="text/javascript">
-top.location.href='http://www.mahaixiang.cn/';
+top.location.href='http://www.dhzj.org/';
 </script>
 七、返回上一页
 <script type="text/javascript">
